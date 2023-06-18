@@ -1,23 +1,23 @@
-# 百度迁徙python爬虫
+# Baidu migration python crawler
 
-> 爬取百度迁徙数据，分为3个类型：城市，省份，全国
+> Crawl Baidu migration data, divided into 3 types: city, province, country
 
-## 问题描述：
-使用python爬取百度迁徙平台：http://qianxi.baidu.com/ 中人口流动数据，根据所需类型取消注释相应代码即可。
-爬取内容将会以 Excel文件形式 保存在代码根目录中的**move_in**、**move_out**文件夹
+## Description:
+Use python to crawl the population flow data in the Baidu migration platform: http://qianxi.baidu.com/, and uncomment the corresponding code according to the required type.
+The crawled content will be saved as an Excel file in the **move_in**, **move_out** folders in the root directory of the code
 
-## 使用须知：
-1. **路径**：使用前请修改绝对路径
+## Terms and Conditions:
+1. **Path**: Please modify the absolute path before use
 
-2. **日期**：请在【migration_all_date】函数中修改日期（注意，左区间包含，右区间不包含）
+2. **Date**: Please modify the date in the [migration_all_date] function (note that the left interval includes, and the right interval does not include)
 
-3. **城市区间**：由于爬取的时候没有设置异步操作，所以一次性爬取城市过多的情况下会导致时间超时（time_out)，
-因此建议分区间爬取，可以复制多个源程序文件，同时开启多次不同区间的爬取 
+3. **City interval**: Since there is no asynchronous operation set during crawling, it will result in a timeout (time_out) if too many cities are crawled at one time.
+Therefore, it is recommended to crawl between partitions, you can copy multiple source program files, and start crawling multiple times in different intervals at the same time
 
-4. **运行**：确保上述信息无误之后直接运行main.py文件即可
-## 所需的python包
+4. **Run**: Run the main.py file directly after making sure the above information is correct
+## required python packages
 - requests
 - xlwt
 
-## 已爬取的数据
-- [【2020-01-01—2020-02-14】城市级迁入迁出数据](https://mochenzx.lanzoux.com/iRsLUhqfm3i)
+## crawled data
+- [【2020-01-01—2020-02-14】City-level migration and migration data](https://mochenzx.lanzoux.com/iRsLUhqfm3i)
